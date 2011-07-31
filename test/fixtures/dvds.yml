@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  subject: MyString
+  sound_options: MyString
+  aspect_ratio: MyString
+  rating: MyString
+  num_disks: MyString
+  actor: MyString
+  actor2: MyString
+  actor3: MyString
+  director: MyString
+  length: MyString
+  checkout: MyString
+
+two:
+  title: MyString
+  subject: MyString
+  sound_options: MyString
+  aspect_ratio: MyString
+  rating: MyString
+  num_disks: MyString
+  actor: MyString
+  actor2: MyString
+  actor3: MyString
+  director: MyString
+  length: MyString
+  checkout: MyString

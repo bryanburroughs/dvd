@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @dvd.title %>
+</p>
+
+<p>
+  <b>Subject:</b>
+  <%= @dvd.subject %>
+</p>
+
+<p>
+  <b>Sound options:</b>
+  <%= @dvd.sound_options %>
+</p>
+
+<p>
+  <b>Aspect ratio:</b>
+  <%= @dvd.aspect_ratio %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%= @dvd.rating %>
+</p>
+
+<p>
+  <b>Num disks:</b>
+  <%= @dvd.num_disks %>
+</p>
+
+<p>
+  <b>Actor:</b>
+  <%= @dvd.actor %>
+</p>
+
+<p>
+  <b>Actor2:</b>
+  <%= @dvd.actor2 %>
+</p>
+
+<p>
+  <b>Actor3:</b>
+  <%= @dvd.actor3 %>
+</p>
+
+<p>
+  <b>Director:</b>
+  <%= @dvd.director %>
+</p>
+
+<p>
+  <b>Length:</b>
+  <%= @dvd.length %>
+</p>
+
+<p>
+  <b>Checkout:</b>
+  <%= @dvd.checkout %>
+</p>
+
+
+<%= link_to 'Edit', edit_dvd_path(@dvd) %> |
+<%= link_to 'Back', dvds_path %>

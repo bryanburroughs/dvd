@@ -1,0 +1,27 @@
+<p>
+<b><%= @dvdCount %></b>
+DVDs found</p>
+<p>Click on a dvd to see details.</p>
+<ul>
+  <% count = 1 %>
+  <% @dvd.each do |dvd| %>
+    <%= count %>
+    <%= link_to_function "#{dvd.title}", "new Effect.toggle('#{dvd.title}')"%>
+    <div id="<%= "#{dvd.title}" %>" class="blue box" style="display:none">
+      <p>title = <%= link_to "#{dvd.title}", "http://www.imdb.com/find?s=tt&q=#{dvd.title}" %></P>
+      <p>subject = <%= "#{dvd.subject}" %> </P>
+      <p>sound options = <%= "#{dvd.sound_options}" %> </P>
+      <p>aspect ratio = <%= "#{dvd.aspect_ratio}" %> </P>
+      <p>rating = <%= link_to "#{dvd.rating}", "http://www.mpaa.org/FlmRat_Ratings.asp" %></P>
+      <p>number of disks = <%= "#{dvd.num_disks}" %> </P>
+      <p>length = <%= "#{dvd.length}" %> </P>
+      <p>actor = <%= link_to "#{dvd.actor}", "http://www.imdb.com/find?s=nm&q=#{dvd.actor}" %></P>
+      <p>actor = <%= link_to "#{dvd.actor2}", "http://www.imdb.com/find?s=nm&q=#{dvd.actor2}" %></P>
+      <p>actor = <%= link_to "#{dvd.actor3}", "http://www.imdb.com/find?s=nm&q=#{dvd.actor3}" %></P>
+      <p>director = <%= link_to "#{dvd.director}", "http://www.imdb.com/find?s=nm&q=#{dvd.director}" %></P>
+      <p>checkout = <%= "#{dvd.checkout}" %> </P>
+      <% count = count + 1 %>
+    </div>
+    <br>
+  <% end %>
+</ul>

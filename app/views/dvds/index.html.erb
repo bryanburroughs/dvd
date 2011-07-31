@@ -1,0 +1,45 @@
+<h1>Listing dvds</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Subject</th>
+    <th>Sound options</th>
+    <th>Aspect ratio</th>
+    <th>Rating</th>
+    <th>Num disks</th>
+    <th>Actor</th>
+    <th>Actor2</th>
+    <th>Actor3</th>
+    <th>Director</th>
+    <th>Length</th>
+    <th>Checkout</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dvds.each do |dvd| %>
+  <tr>
+    <td><%= dvd.title %></td>
+    <td><%= dvd.subject %></td>
+    <td><%= dvd.sound_options %></td>
+    <td><%= dvd.aspect_ratio %></td>
+    <td><%= dvd.rating %></td>
+    <td><%= dvd.num_disks %></td>
+    <td><%= dvd.actor %></td>
+    <td><%= dvd.actor2 %></td>
+    <td><%= dvd.actor3 %></td>
+    <td><%= dvd.director %></td>
+    <td><%= dvd.length %></td>
+    <td><%= dvd.checkout %></td>
+    <td><%= link_to 'Show', dvd %></td>
+    <td><%= link_to 'Edit', edit_dvd_path(dvd) %></td>
+    <td><%= link_to 'Destroy', dvd, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dvd', new_dvd_path %>

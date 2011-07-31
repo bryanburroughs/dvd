@@ -1,0 +1,65 @@
+<%= form_for(@dvd) do |f| %>
+  <% if @dvd.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dvd.errors.count, "error") %> prohibited this dvd from being saved:</h2>
+
+      <ul>
+      <% @dvd.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :subject %><br />
+    <%= f.text_field :subject %>
+  </div>
+  <div class="field">
+    <%= f.label :sound_options %><br />
+    <%= f.text_field :sound_options %>
+  </div>
+  <div class="field">
+    <%= f.label :aspect_ratio %><br />
+    <%= f.text_field :aspect_ratio %>
+  </div>
+  <div class="field">
+    <%= f.label :rating %><br />
+    <%= f.text_field :rating %>
+  </div>
+  <div class="field">
+    <%= f.label :num_disks %><br />
+    <%= f.text_field :num_disks %>
+  </div>
+  <div class="field">
+    <%= f.label :actor %><br />
+    <%= f.text_field :actor %>
+  </div>
+  <div class="field">
+    <%= f.label :actor2 %><br />
+    <%= f.text_field :actor2 %>
+  </div>
+  <div class="field">
+    <%= f.label :actor3 %><br />
+    <%= f.text_field :actor3 %>
+  </div>
+  <div class="field">
+    <%= f.label :director %><br />
+    <%= f.text_field :director %>
+  </div>
+  <div class="field">
+    <%= f.label :length %><br />
+    <%= f.text_field :length %>
+  </div>
+  <div class="field">
+    <%= f.label :checkout %><br />
+    <%= f.text_field :checkout %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
