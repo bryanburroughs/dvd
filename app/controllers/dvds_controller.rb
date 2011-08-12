@@ -1,7 +1,8 @@
 class DvdsController < ApplicationController
   # Custom list -BLB
   def list
-    @dvd = Dvd.find_by_sql("SELECT * from dvds order by id")
+    #@dvd = Dvd.find_by_sql("SELECT * from dvds order by id")
+    @dvd = Dvd.find_by_sql("SELECT * from dvds order by title")
     @dvdCount = Dvd.count
   end
 

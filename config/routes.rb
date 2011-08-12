@@ -1,4 +1,7 @@
 Dvdhome::Application.routes.draw do
+
+  root :to => "dvds#list"
+
   get "dvds/list"
 
   resources :dvds

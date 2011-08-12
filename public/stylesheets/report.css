@@ -2,6 +2,10 @@
  *
  *    -Bryan Burroughs       */
 
+body {
+  background: #6D7B8D;
+}
+
 .status { 
 	font-family: arial,serif; 
 	background-color: white; 
